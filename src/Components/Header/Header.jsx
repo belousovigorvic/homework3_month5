@@ -13,7 +13,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className={classes.link} to={'/create__post'}>
+            <Link className={classes.link} to={'/create-post'}>
               Create Post
             </Link>
           </li>
