@@ -1,0 +1,23 @@
+.createPost__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form button {
+  padding: 10px;
+  font-size: 24px;
+}
+
+.form button {
+  cursor: pointer;
+}
+
+.CreatePost {
+  height: 100vh;
+}
