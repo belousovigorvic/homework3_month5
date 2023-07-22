@@ -6,7 +6,6 @@ import Title from '../../Components/Title/Title'
 const Posts = () => {
   const URL = 'https://dummyjson.com/posts'
   const [data, setData] = useState([])
-  const [editedPost, setEditedPost] = useState('')
 
   // Загрузка данных при монтировании
   useEffect(() => {
@@ -32,7 +31,6 @@ const Posts = () => {
   const editPostClick = (post, index) => {
     const editedTitlePromt = prompt(`Edit title: ${post.title}`);
     if (editedTitlePromt !== null) {
-      setEditedPost(editedTitlePromt);
       axios
         .put(`https://dummyjson.com/posts/${index + 1}`, { title: editedTitlePromt }) // Отправляем объект с обновленным заголовком
         .then(response => {
